@@ -2,9 +2,20 @@
   font-family:  Georgia;
 }
 
+#sidebar a {
+    color: black;
+    font-weight: bold;
+    padding: 2px 8px;
+    text-decoration: none;
+    border: 2px solid black;
+    display: inline-block;
+    background: orange;
+    width: 8em;
+}
+
 a {
-  color:  orange;
-  font-weight:  bold;
+    color: orange;
+    font-weight:bold;
 }
 
 a:hover {
@@ -65,12 +76,16 @@ h1.page-title {
   padding-top: 10px;
 }
 
+h1.welcome-message {
+    margin-top:0;
+}
+
 h1.welcome-message::first-letter {
   font-size:  2em;
   font-weight:  bold;
 }
 
-header {
+#home-banner {
   background: orange;
   background: -webkit-linear-gradient(+45deg, white, orange 75%, black); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(+45deg, white, orange 75%, black); /* For Opera 11.1 to 12.0 */
@@ -78,6 +93,32 @@ header {
   background: linear-gradient(+45deg, white, orange 75%, black); /* Standard syntax */
   border-bottom: #000 solid thin;
   position: relative;
+}
+
+#horizontal-nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em 0;
+    background: black;
+}
+
+#horizontal-nav-bar li {
+    display: inline;
+}
+
+#horizontal-nav-bar a {
+    padding: 0.5em 2.47em;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#horizontal-nav-bar a:hover {
+    background: grey;
+}
+
+#horizontal-nav-bar a:visited {
+    color: orange;
 }
 
 html {
@@ -102,5 +143,10 @@ li {
 #sidebar {
   float: left;
   width:160px;
+}
+
+ul {
+    list-style-type: none;
+    -webkit-padding-start: 10px;
 }
 
