@@ -1,3 +1,12 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 22, 2016, 11:45:33 AM
+    Author     : scottarmstrong
+*/
 * {
   font-family:  Georgia;
 }
@@ -14,12 +23,11 @@
 }
 
 a {
-    color: orange;
-    font-weight:bold;
+    color: black;
 }
 
 a:hover, a:focus {
-  color:  green;
+    color: green;
 }
 
 body {
@@ -29,6 +37,14 @@ body {
   margin-right: auto;
   margin-top: 0px;
   width: 800px;
+}
+
+#cat-image {
+    float:left;
+}
+
+#cat-description {
+    margin-left: 11em;
 }
 
 footer {
@@ -53,18 +69,6 @@ footer {
   position: absolute;               
   top: 50%;                         
   transform: translate(0, -50%) 
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size:1.25em;
-}
-
-h4 {
-  font-size: 1.15em;
 }
 
 h1.page-title {
@@ -113,10 +117,6 @@ h1.welcome-message::first-letter {
     background: grey;
 }
 
-#horizontal-nav-bar a:visited {
-    color: orange;
-}
-
 html {
   background-image: url(../images/bats.gif);
 }
@@ -136,6 +136,26 @@ li {
   margin-left: 105px;
 }
 
+.product-image {
+    width: 80px;
+    height: 90px;
+}
+
+#product-list {
+    margin-left: 20px;
+}
+
+#product-sidebar {
+    float: right;
+    width: 180px;
+    background: #f5deb3;
+}
+
+#product-sidebar-title {
+    font-size: 1em;
+    margin-left: 10px;
+}
+
 #sidebar {
   float: left;
   width:160px;
@@ -145,4 +165,5 @@ ul {
     list-style-type: none;
     -webkit-padding-start: 10px;
 }
+
 
