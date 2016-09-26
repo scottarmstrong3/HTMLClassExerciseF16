@@ -12,22 +12,22 @@ and open the template in the editor.
 }
 
 #sidebar a {
+    background: orange;
+    border: 2px solid black;
     color: black;
+    display: inline-block;
     font-weight: bold;
     padding: 2px 8px;
     text-decoration: none;
-    border: 2px solid black;
-    display: inline-block;
-    background: orange;
     width: 8em;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 a:hover, a:focus {
-    color: green;
+  color: green;
 }
 
 body {
@@ -40,11 +40,11 @@ body {
 }
 
 #cat-image {
-    float:left;
+  float:left;
 }
 
 #cat-description {
-    margin-left: 11em;
+  margin-left: 11em;
 }
 
 footer {
@@ -96,21 +96,21 @@ h1.welcome-message::first-letter {
 }
 
 #horizontal-nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0.5em 0;
-    background: black;
+  background: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em 0;
 }
 
 #horizontal-nav-bar li {
-    display: inline;
+  display: inline;
 }
 
 #horizontal-nav-bar a {
-    padding: 0.5em 2.47em;
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
+  color: white;
+  font-weight: normal;
+  padding: 0.5em 2.47em;
+  text-decoration: none;
 }
 
 #horizontal-nav-bar a:hover {
@@ -137,8 +137,8 @@ li {
 }
 
 .product-image {
-    width: 80px;
     height: 90px;
+    width: 80px;
 }
 
 #product-list {
@@ -146,9 +146,9 @@ li {
 }
 
 #product-sidebar {
+    background: #f5deb3;
     float: right;
     width: 180px;
-    background: #f5deb3;
 }
 
 #product-sidebar-title {

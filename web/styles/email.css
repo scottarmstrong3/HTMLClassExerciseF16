@@ -120,6 +120,13 @@ html {
   background-image: url(../images/bats.gif);
 }
 
+label {
+    display: inline-block;
+    margin-right: 1em;
+    text-align: right;
+    width: 6em;
+}
+
 li {
   margin-top:  5px;
 }
@@ -135,9 +142,21 @@ li {
   margin-left: 105px;
 }
 
+p {
+    margin: 0.2em 0;
+}
+
 #sidebar {
   float: left;
   width:160px;
+}
+
+#submit-button {
+    background: orange;
+    border: 1px black solid;
+    margin-left: 7em;
+    margin-bottom: 1em;
+    padding: 3px 15px;
 }
 
 ul {

@@ -112,10 +112,6 @@ h1.welcome-message::first-letter {
   background: grey;
 }
 
-a#current-link {
-  color: orange;
-}
-
 html {
   background-image: url(../images/bats.gif);
 }
