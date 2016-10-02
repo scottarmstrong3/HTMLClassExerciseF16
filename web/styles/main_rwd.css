@@ -8,7 +8,7 @@
   color: black;
   display: inline-block;
   font-weight: bold;
-  padding: 2px 8px;
+  padding: 0.1em 0.3em;
   text-decoration: none;
   width: 8em;
 }
@@ -27,8 +27,9 @@ body {
   box-shadow: 5px 5px 5px 5px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
-  width: 800px;
+  margin-top: 0;
+  max-width: 800px;
+  width: 83.333%
 }
 
 footer {
@@ -46,12 +47,17 @@ footer {
 
 .halloween-image {
   float:  left;
+  height: 70%;
   margin-bottom: auto;
   margin-left: 10px;
   margin-top: auto;
+  max-width: 85px;
+  max-height: 78px;
+  min-width: 40px;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  width: 11%
 }
 
 h2 {
@@ -68,7 +74,7 @@ h4 {
 
 h1.page-title {
   font-size:  1.75em;
-  padding-top: 10px;
+  padding-top: 0.6em;
 }
 
 h1.welcome-message {
@@ -95,6 +101,7 @@ h1.welcome-message::first-letter {
   list-style-type: none;
   margin: 0;
   padding: 0.5em 0;
+  width: 100%
 }
 
 #horizontal-nav-bar li {
@@ -119,22 +126,33 @@ a#current-link {
 #hamburger {
     width: 10%;
     height: 5%;
-    transform: translate(0, 500px);
+    visibility: hidden;
 }
 
 html {
+  max-width: 960px;
+  width: 95%;
+  height: 95%;
+  margin: auto auto;
   background-image: url(../images/bats.gif);
 }
 
+#cat-image {
+    width: 25%;
+    max-width: 154px;
+    max-height: 122px;
+    height: 25%;
+}
+
 li {
-  margin-top:  5px;
+  margin-top:  0.3em;
 }
 
 .main {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-left: 170px;
   margin-right: 10px;
-  margin-top: 5px;
+  margin-top: 0.3em;
 }
 
 .next-to-image {
@@ -149,4 +167,105 @@ li {
 ul {
   list-style-type: none;
   -webkit-padding-start: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        background-image: none;
+        font-size: 90%;
+    }
+    
+    body {
+        box-shadow: none;
+        border: 1px black solid;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #hamburger {
+        visibility: visible;
+        transform: translate(0, 0);
+        float: right;
+        font-size: 1.2em;
+        margin-right: 4em;
+        margin-top: 0.6em;
+    }
+    
+    #hamburger:hover {
+        cursor: pointer;
+    }
+    
+    #horizontal-nav-bar.open {
+        float: left;
+        transform: translate(0,0) !important;
+        display: block !important;
+        height: 2em;
+    }
+    
+    #horizontal-nav-bar.open li {
+        background: black;
+        display: block;
+        padding: 0.5em 0;
+        margin: 0 auto;
+    }
+    
+    #horizontal-nav-bar {
+        float: left;
+        transform: translate(-120%,0);
+        height: 0;
+        padding: 0;
+    }
+    
+    #horizontal-nav-bar li {
+        width: 100%;
+        margin: 0;
+        padding: 0.5em 0;
+    }
+    
+    #horizontal-nav-bar.open a{
+        padding: 0.5em 0;
+        padding-left: 0.4em;
+        padding-right: 2.5em;
+    }
+    
+    #horizontal-nav-bar li:hover {
+        background:grey;
+    }
+    
+    body {
+        position: relative;
+    }
+    
+    .main {
+        width: 95%;
+        margin: 1em auto;
+    }
+    
+    footer {
+        margin-top: 14em
+    }
+    
+    #sidebar {
+        float: none;
+        position: absolute;
+        margin-left: 41%;
+        bottom: 4em;
+    }
+    
+    #top-nav {
+        height: 3em;
+        width:100%;
+        background: black;   
+    }
+    
+}
+
+@media screen and (max-width: 479px) {
+    header h1, header h2 {
+        font-size: 80%;
+    }
+    
+    article h1:first-of-type, article h2:first-of-type, article h3:first-of-type, section h1:first-of-type, section h2:first-of-type, section h3:first-of-type, header .page-title {
+        font-size: 1.4em;
+    }
 }
